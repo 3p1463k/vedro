@@ -10,6 +10,10 @@ templates = Jinja2Templates(directory="templates")
 @homepage_router.get("/")
 async def home(request: Request):
 
-    context = {"request": request}
+    start_coords = (49.7, 15.2)
+    mymap = folium.Map(location=start_coords, zoom_start=8)
+    folium.LayerControl().add_to(mymap)
+    mymap1 = mymap._repr_html_()
+    context = {"request": request, "mymap": mymap1}
 
     return templates.TemplateResponse("/general_pages/homepage.html", context)
