@@ -22,3 +22,10 @@ python-multipart
 
 #image processing
 pillow
+
+#web scraping
+selenium
+webdriver_manager
+beautifulsoup4
+lxml
+html5lib
