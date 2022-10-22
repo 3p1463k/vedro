@@ -1,413 +1,225 @@
-
-
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
-<head>
-    <meta http-equiv="x-ua-compatible" content="IE=Edge">
-    <title>Portál ČHMÚ : Předpovědi : Předpovědi počasí : Česká republika : Týdenní předpověď</title>
-
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-    <meta http-equiv="content-language" content="cs" />
-    <meta name="robots" content="all,follow" />
-    <meta name="copyright" content="Český hydrometeorologický ústav" />
-
-    <link rel="shortcut icon" href="/s/images/favicon.ico" type="image/x-icon"/>
-    <link rel="icon" href="/s/images/favicon.ico" type="image/x-icon"/>
-    <link rel="icon" href="/s/images/chmi-16x16.png" sizes="16x16"/>
-    <link rel="icon" href="/s/images/chmi-32x32.png" sizes="32x32"/>
-    <link rel="icon" href="/s/images/chmi-96x96.png" sizes="96x96"/>
-    <link rel="icon" href="/s/images/chmi-128x128.png" sizes="128x128"/>
-    <link rel="icon" href="/s/images/chmi-196x196.png" sizes="196x196"/>
-    <link rel="apple-touch-icon-precomposed" href="/s/images/chmi-57x57.png" sizes="57x57"/>
-    <link rel="apple-touch-icon-precomposed" href="/s/images/chmi-60x60.png" sizes="60x60"/>
-    <link rel="apple-touch-icon-precomposed" href="/s/images/chmi-76x76.png" sizes="76x76"/>
-    <link rel="apple-touch-icon-precomposed" href="/s/images/chmi-114x114.png" sizes="114x114"/>
-    <link rel="apple-touch-icon-precomposed" href="/s/images/chmi-120x120.png" sizes="120x120"/>
-    <link rel="apple-touch-icon-precomposed" href="/s/images/chmi-144x144.png" sizes="144x144"/>
-    <link rel="apple-touch-icon-precomposed" href="/s/images/chmi-152x152.png" sizes="152x152"/>
-    <!-- horni pruh MZP -->
-    <!-- CSS -->
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="/s/css/reset.css" />
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="/s/css/main.css" />
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="/s/css/user.css" />
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="/s/css/cookie.css" />
-    <!--[if ie 6]><link rel="stylesheet" type="text/css" href="/portal/chmu/css/main-msie.css" /><![endif]-->
-    <!--[if ie 7]><link rel="stylesheet" type="text/css" href="/portal/chmu/css/main-msie7.css" /><![endif]-->
-    <link rel="stylesheet" media="print" type="text/css" href="/s/css/print.css" />
-    <!-- jQuery -->
-    <script src="/s/js/jquery.js" type="text/javascript"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="/s/css/jquery-ui.css" />
-    <script src="/s/js/jquery-ui.js" type="text/javascript"></script>
-
-<script type="text/javascript" src="/s/js/encoding-indexes.js"></script>
-<script type="text/javascript" src="/s/js/encoding.js"></script>
-
-    <script src="/s/js/header-builder.js" type="text/javascript"></script>
-    <!-- horni pruh MZP end -->
-    <link rel="stylesheet" type="text/css" media="screen" href="/s/css/chmu.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="/s/css/addon.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="/s/css/fatwire.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="/s/css/portlet.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="/s/css/iclidata-full-css.css" />
-
-    <!-- neni homepage -->
-
-    <link rel="stylesheet" type="text/css" media="screen" href="/s/css/non-homepage.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="/s/css/aim_isko_mapa.css" />
-
-    <!-- js calendar -->
-    <link rel="stylesheet" type="text/css" media="screen" href="/s/calendar/skins/aqua/theme.css" />
-    <script type="text/javascript" src="/s/js/common.js"></script>
-    <script type="text/javascript" src="/s/js/chmu.js"></script>
-    <script type="text/javascript" src="/s/js/aim_isko_mapa.js"></script>
-    <script type="text/javascript" src="/s/calendar/calendar.js"></script>
-    <script type="text/javascript" src="/s/calendar/lang/calendar-cs.js"></script>
-    <script type="text/javascript" src="/s/calendar/calendar-setup.js"></script>
-    <script type="text/javascript" src="/s/js/cookie.js"></script>
-
-
+<html lang="cs" xml:lang="cs" xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta content="IE=Edge" http-equiv="x-ua-compatible"/>
+<title>Portál ČHMÚ : Předpovědi : Předpovědi počasí : Česká republika : Týdenní předpověď</title>
+<meta content="text/html;charset=utf-8" http-equiv="content-type"/>
+<meta content="cs" http-equiv="content-language"/>
+<meta content="all,follow" name="robots"/>
+<meta content="Český hydrometeorologický ústav" name="copyright"/>
+<link href="/s/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="/s/images/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="/s/images/chmi-16x16.png" rel="icon" sizes="16x16"/>
+<link href="/s/images/chmi-32x32.png" rel="icon" sizes="32x32"/>
+<link href="/s/images/chmi-96x96.png" rel="icon" sizes="96x96"/>
+<link href="/s/images/chmi-128x128.png" rel="icon" sizes="128x128"/>
+<link href="/s/images/chmi-196x196.png" rel="icon" sizes="196x196"/>
+<link href="/s/images/chmi-57x57.png" rel="apple-touch-icon-precomposed" sizes="57x57"/>
+<link href="/s/images/chmi-60x60.png" rel="apple-touch-icon-precomposed" sizes="60x60"/>
+<link href="/s/images/chmi-76x76.png" rel="apple-touch-icon-precomposed" sizes="76x76"/>
+<link href="/s/images/chmi-114x114.png" rel="apple-touch-icon-precomposed" sizes="114x114"/>
+<link href="/s/images/chmi-120x120.png" rel="apple-touch-icon-precomposed" sizes="120x120"/>
+<link href="/s/images/chmi-144x144.png" rel="apple-touch-icon-precomposed" sizes="144x144"/>
+<link href="/s/images/chmi-152x152.png" rel="apple-touch-icon-precomposed" sizes="152x152"/>
+<!-- horni pruh MZP -->
+<!-- CSS -->
+<link href="/s/css/reset.css" media="screen,projection" rel="stylesheet" type="text/css"/>
+<link href="/s/css/main.css" media="screen,projection" rel="stylesheet" type="text/css"/>
+<link href="/s/css/user.css" media="screen,projection" rel="stylesheet" type="text/css"/>
+<link href="/s/css/cookie.css" media="screen,projection" rel="stylesheet" type="text/css"/>
+<!--[if ie 6]><link rel="stylesheet" type="text/css" href="/portal/chmu/css/main-msie.css" /><![endif]-->
+<!--[if ie 7]><link rel="stylesheet" type="text/css" href="/portal/chmu/css/main-msie7.css" /><![endif]-->
+<link href="/s/css/print.css" media="print" rel="stylesheet" type="text/css"/>
+<!-- jQuery -->
+<script src="/s/js/jquery.js" type="text/javascript"></script>
+<link href="/s/css/jquery-ui.css" media="screen" rel="stylesheet" type="text/css"/>
+<script src="/s/js/jquery-ui.js" type="text/javascript"></script>
+<script src="/s/js/encoding-indexes.js" type="text/javascript"></script>
+<script src="/s/js/encoding.js" type="text/javascript"></script>
+<script src="/s/js/header-builder.js" type="text/javascript"></script>
+<!-- horni pruh MZP end -->
+<link href="/s/css/chmu.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/s/css/addon.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/s/css/fatwire.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/s/css/portlet.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/s/css/iclidata-full-css.css" media="screen" rel="stylesheet" type="text/css"/>
+<!-- neni homepage -->
+<link href="/s/css/non-homepage.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="/s/css/aim_isko_mapa.css" media="screen" rel="stylesheet" type="text/css"/>
+<!-- js calendar -->
+<link href="/s/calendar/skins/aqua/theme.css" media="screen" rel="stylesheet" type="text/css"/>
+<script src="/s/js/common.js" type="text/javascript"></script>
+<script src="/s/js/chmu.js" type="text/javascript"></script>
+<script src="/s/js/aim_isko_mapa.js" type="text/javascript"></script>
+<script src="/s/calendar/calendar.js" type="text/javascript"></script>
+<script src="/s/calendar/lang/calendar-cs.js" type="text/javascript"></script>
+<script src="/s/calendar/calendar-setup.js" type="text/javascript"></script>
+<script src="/s/js/cookie.js" type="text/javascript"></script>
 </head>
 <body>
-
-    <!-- horni prouzek MZP -->
-    <div id="prouzek_main">
-        <div id="prouzek_header" class="prouzek_box">
-            <div id="prouzek_sekce" class="prouzek_box">
-                <div id="sbaleny_holder" class="zavreny">
-                    <div class="sekce-obal prouzek_box">
-                        <div class="sekce-polovina t-left">
-                            <h1 id="sekce-logo"><a href="#" title="[Odkazy na weby resortu životního prostredí zobrazíte stiskem další instituce resortu ŽP vpravo]"> <span> </span> </a></h1>
-                            <hr class="noscreen" />
-                        </div>
-                        <div class="sekce-polovina t-right">
-                            <a href="/odkazy/resort-zivotniho-prostredi" title="[Výběr dalších institucí rezortu ŽP]">dal&scaron;&iacute; instituce resortu &#381;P</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- horni prouzek MZP end -->
-    <div id="main">
-        <div id="header-holder">
-            <div id="header">
-                <h1 >
-                    <a href="/"><span class="txt">Český hydrometeorologický ústav</span><span></span></a>
-                </h1>
-                <div id="links">
-
-                        <a href="/?l=en" id="link-english">English<span></span></a><span class="fr">|</span>
-                    <a href="/sitemap" id="link-sitemap">Mapa stránek<span></span></a>
-                    <br style="clear: both" />
-                </div>
-                <div id="banners">
-                    <a href="/?tab=0">
-                        <img src="/s/images/content/pictures/banner-meteorologie.png" width="323" height="83" alt="Meteorologie a klimatologie" title="Meteorologie a klimatologie" />
-                    </a>
-                    <a href="/?tab=2">
-                        <img src="/s/images/content/pictures/banner-ovzdusi.png" width="323" height="83" alt="Kvalita ovzdusi" title="Kvalita ovzdusi" />
-                    </a>
-                    <a href="/?tab=1">
-                        <img src="/s/images/content/pictures/banner-hydrologie.png" width="323" height="83" alt="Hydrologie" title="Hydrologie" />
-                    </a>
-                </div>
-                <hr class="hidden" />
-                <!-- main menu -->
-
-                <div id="nav">
-                    <h3 class="hidden">Navigace</h3>
-                    <ul id="mnu">
-
-
-                               <li id="nav-8">
-                                   <a href="/predpovedi/"><span class="txt">Předpovědi</span><span></span></a>
-                                   <div class="submnu" id="submnu-8">
-                                       <ul>
-
-
-
-                                           <li id="nav-80-2"><a href="/predpovedi/predpovedi-pocasi/"><span>Předpovědi počasí</span></a></li>
-
-
-
-                                           <li id="nav-80-3"><a href="/predpovedi/hydrologicke-predpovedi/"><span>Hydrologické předpovědi</span></a></li>
-
-
-
-                                       </ul>
-                                   </div>
-                               </li>
-
-
-
-                               <li id="nav-9">
-                                   <a href="/aktualni-situace/"><span class="txt">Aktuální situace</span><span></span></a>
-                                   <div class="submnu" id="submnu-9">
-                                       <ul>
-
-
-
-                                           <li id="nav-90-6"><a href="/aktualni-situace/aktualni-stav-pocasi/"><span>Aktuální stav počasí</span></a></li>
-
-
-
-                                           <li id="nav-90-7"><a href="/aktualni-situace/hydrologicka-situace/"><span>Hydrologická situace</span></a></li>
-
-
-
-                                           <li id="nav-90-8"><a href="/aktualni-situace/stav-ovzdusi/"><span>Stav ovzduší</span></a></li>
-
-
-
-                                           <li id="nav-90-9"><a href="/aktualni-situace/sucho"><span>Monitoring sucha</span></a></li>
-
-
-
-                                       </ul>
-                                   </div>
-                               </li>
-
-
-
-                               <li id="nav-3">
-                                   <a href="/historicka-data/"><span class="txt">Historická data</span><span></span></a>
-                                   <div class="submnu" id="submnu-3">
-                                       <ul>
-
-
-
-                                           <li id="nav-30-12"><a href="/historicka-data/pocasi/"><span>Počasí</span></a></li>
-
-
-
-                                           <li id="nav-30-13"><a href="/historicka-data/hydrologie/"><span>Hydrologie</span></a></li>
-
-
-
-                                           <li id="nav-30-14"><a href="/historicka-data/ovzdusi"><span>Ovzduší</span></a></li>
-
-
-
-                                       </ul>
-                                   </div>
-                               </li>
-
-
-
-                               <li id="nav-2">
-                                   <a href="/informace-a-sluzby/"><span class="txt">Informace a služby</span><span></span></a>
-                                   <div class="submnu" id="submnu-2">
-                                       <ul>
-
-
-
-                                           <li id="nav-20-17"><a href="/informace-a-sluzby/nabizene-sluzby/"><span>Nabízené služby</span></a></li>
-
-
-
-                                           <li id="nav-20-18"><a href="/informace-a-sluzby/mobilni-aplikace/"><span>Mobilní aplikace</span></a></li>
-
-
-
-                                           <li id="nav-20-19"><a href="/informace-a-sluzby/tiskove-zpravy/"><span>Tiskové zprávy</span></a></li>
-
-
-
-                                           <li id="nav-20-20"><a href="/informace-a-sluzby/informace-pro-media-a-verejnost"><span>Informace pro media a veřejnost</span></a></li>
-
-
-
-                                           <li id="nav-20-21"><a href="/informace-a-sluzby/rocni-vyhodnoceni/"><span>Roční vyhodnocení</span></a></li>
-
-
-
-                                           <li id="nav-20-22"><a href="/informace-a-sluzby/mesicni-vyhodnoceni/"><span>Měsíční vyhodnocení</span></a></li>
-
-
-
-                                           <li id="nav-20-23"><a href="/informace-a-sluzby/prezentace-a-vyuka/"><span>Prezentace a výuka</span></a></li>
-
-
-
-                                           <li id="nav-20-24"><a href="/informace-a-sluzby/projekty"><span>Projekty</span></a></li>
-
-
-
-                                           <li id="nav-20-25"><a href="/informace-a-sluzby/knihovna"><span>Knihovna veřejná specializovaná</span></a></li>
-
-
-
-                                           <li id="nav-20-26"><a href="/informace-a-sluzby/nakladatelstvi"><span>Nakladatelství</span></a></li>
-
-
-
-                                           <li id="nav-20-27"><a href="/informace-a-sluzby/casopis-meteorologicke-zpravy"><span>Časopis Meteorologické zprávy</span></a></li>
-
-
-
-                                           <li id="nav-20-28"><a href="/informace-a-sluzby/referencni-klimaticky-rok"><span>Referenční klimatický rok</span></a></li>
-
-
-
-                                           <li id="nav-20-29"><a href="/informace-a-sluzby/exkurze"><span>Exkurze</span></a></li>
-
-
-
-                                           <li id="nav-20-30"><a href="/informace-a-sluzby/nalezli-jste-radiosondu"><span>Nalezli jste radiosondu?</span></a></li>
-
-
-
-                                       </ul>
-                                   </div>
-                               </li>
-
-
-
-                               <li id="nav-4">
-                                   <a href="/o-nas/"><span class="txt">O nás</span><span></span></a>
-                                   <div class="submnu" id="submnu-4">
-                                       <ul>
-
-
-
-                                           <li id="nav-40-33"><a href="/o-nas/zakladni-dokumenty"><span>Základní dokumenty</span></a></li>
-
-
-
-                                           <li id="nav-40-34"><a href="/o-nas/organizacni-struktura/"><span>Organizační struktura</span></a></li>
-
-
-
-                                           <li id="nav-40-35"><a href="/o-nas/historie-ustavu"><span>Historie ústavu</span></a></li>
-
-
-
-                                           <li id="nav-40-36"><a href="/o-nas/vedeni-CHMU"><span>Vedení ČHMÚ</span></a></li>
-
-
-
-                                           <li id="nav-40-37"><a href="/o-nas/nabidka-zamestnani"><span>Nabídka zaměstnání</span></a></li>
-
-
-
-                                           <li id="nav-40-38"><a href="/o-nas/verejne-zakazky"><span>Veřejné zakázky</span></a></li>
-
-
-
-                                           <li id="nav-40-39"><a href="/o-nas/protikorupcni-opatreni-v-CHMU"><span>Protikorupční opatření v ČHMÚ</span></a></li>
-
-
-
-                                           <li id="nav-40-40"><a href="/o-nas/zpracovani-osobnich-udaju"><span>Zpracování osobních údajů</span></a></li>
-
-
-
-                                           <li id="nav-40-41"><a href="/o-nas/podatelna-CHMU"><span>Podatelna ČHMÚ</span></a></li>
-
-
-
-                                           <li id="nav-40-42"><a href="/o-nas/nabidka-nepotrebneho-majetku"><span>Nabídka nepotřebného majetku</span></a></li>
-
-
-
-                                           <li id="nav-40-43"><a href="/o-nas/prohlaseni-o-pristupnosti"><span>Prohlášení o přístupnosti</span></a></li>
-
-
-
-                                           <li id="nav-40-44"><a href="/o-nas/poskytovani-informaci"><span>Poskytování informací</span></a></li>
-
-
-
-                                       </ul>
-                                   </div>
-                               </li>
-
-
-
-                               <li id="nav-5">
-                                   <a href="/odkazy/"><span class="txt">Odkazy</span><span></span></a>
-                                   <div class="submnu" id="submnu-5">
-                                       <ul>
-
-
-
-                                           <li id="nav-50-47"><a href="/odkazy/resort-zivotniho-prostredi"><span>Resort životního prostředí</span></a></li>
-
-
-
-                                           <li id="nav-50-48"><a href="/odkazy/hamr"><span>HAMR</span></a></li>
-
-
-
-                                           <li id="nav-50-49"><a href="/odkazy/partneri"><span>Partneři</span></a></li>
-
-
-
-                                           <li id="nav-50-50"><a href="/odkazy/narodni-meteorologicke-sluzby/"><span>Národní meteorologické služby</span></a></li>
-
-
-
-                                           <li id="nav-50-51"><a href="/odkazy/katastrofy"><span>Katastrofy</span></a></li>
-
-
-
-                                           <li id="nav-50-52"><a href="/odkazy/meteorologie-pro-mladez"><span>Meteorologie pro mládež</span></a></li>
-
-
-
-                                       </ul>
-                                   </div>
-                               </li>
-
-
-
-                               <li id="nav-6">
-                                   <a href="/kontakty/"><span class="txt">Kontakty</span><span></span></a>
-                                   <div class="submnu" id="submnu-6">
-                                       <ul>
-
-
-
-                                           <li id="nav-60-55"><a href="/kontakty/vyhledat"><span>Vyhledat kontakt</span></a></li>
-
-
-
-                                       </ul>
-                                   </div>
-                               </li>
-
-
-
-                               <li id="nav-7">
-                                   <a href="/login"><span class="txt">Login</span><span></span></a></li>
-
-
-                    </ul>
-                </div>
-
-                <!-- main menu end -->
-            </div>
-        </div>
-        <div id="content-holder">
-            <div id="content">
-                <div id="content-body" class="home">
-                    <div id="breadCrumbs">
+<!-- horni prouzek MZP -->
+<div id="prouzek_main">
+<div class="prouzek_box" id="prouzek_header">
+<div class="prouzek_box" id="prouzek_sekce">
+<div class="zavreny" id="sbaleny_holder">
+<div class="sekce-obal prouzek_box">
+<div class="sekce-polovina t-left">
+<h1 id="sekce-logo"><a href="#" title="[Odkazy na weby resortu životního prostredí zobrazíte stiskem další instituce resortu ŽP vpravo]"> <span> </span> </a></h1>
+<hr class="noscreen"/>
+</div>
+<div class="sekce-polovina t-right">
+<a href="/odkazy/resort-zivotniho-prostredi" title="[Výběr dalších institucí rezortu ŽP]">další instituce resortu ŽP</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- horni prouzek MZP end -->
+<div id="main">
+<div id="header-holder">
+<div id="header">
+<h1>
+<a href="/"><span class="txt">Český hydrometeorologický ústav</span><span></span></a>
+</h1>
+<div id="links">
+<a href="/?l=en" id="link-english">English<span></span></a><span class="fr">|</span>
+<a href="/sitemap" id="link-sitemap">Mapa stránek<span></span></a>
+<br style="clear: both"/>
+</div>
+<div id="banners">
+<a href="/?tab=0">
+<img alt="Meteorologie a klimatologie" height="83" src="/s/images/content/pictures/banner-meteorologie.png" title="Meteorologie a klimatologie" width="323"/>
+</a>
+<a href="/?tab=2">
+<img alt="Kvalita ovzdusi" height="83" src="/s/images/content/pictures/banner-ovzdusi.png" title="Kvalita ovzdusi" width="323"/>
+</a>
+<a href="/?tab=1">
+<img alt="Hydrologie" height="83" src="/s/images/content/pictures/banner-hydrologie.png" title="Hydrologie" width="323"/>
+</a>
+</div>
+<hr class="hidden"/>
+<!-- main menu -->
+<div id="nav">
+<h3 class="hidden">Navigace</h3>
+<ul id="mnu">
+<li id="nav-8">
+<a href="/predpovedi/"><span class="txt">Předpovědi</span><span></span></a>
+<div class="submnu" id="submnu-8">
+<ul>
+<li id="nav-80-2"><a href="/predpovedi/predpovedi-pocasi/"><span>Předpovědi počasí</span></a></li>
+<li id="nav-80-3"><a href="/predpovedi/hydrologicke-predpovedi/"><span>Hydrologické předpovědi</span></a></li>
+</ul>
+</div>
+</li>
+<li id="nav-9">
+<a href="/aktualni-situace/"><span class="txt">Aktuální situace</span><span></span></a>
+<div class="submnu" id="submnu-9">
+<ul>
+<li id="nav-90-6"><a href="/aktualni-situace/aktualni-stav-pocasi/"><span>Aktuální stav počasí</span></a></li>
+<li id="nav-90-7"><a href="/aktualni-situace/hydrologicka-situace/"><span>Hydrologická situace</span></a></li>
+<li id="nav-90-8"><a href="/aktualni-situace/stav-ovzdusi/"><span>Stav ovzduší</span></a></li>
+<li id="nav-90-9"><a href="/aktualni-situace/sucho"><span>Monitoring sucha</span></a></li>
+</ul>
+</div>
+</li>
+<li id="nav-3">
+<a href="/historicka-data/"><span class="txt">Historická data</span><span></span></a>
+<div class="submnu" id="submnu-3">
+<ul>
+<li id="nav-30-12"><a href="/historicka-data/pocasi/"><span>Počasí</span></a></li>
+<li id="nav-30-13"><a href="/historicka-data/hydrologie/"><span>Hydrologie</span></a></li>
+<li id="nav-30-14"><a href="/historicka-data/ovzdusi"><span>Ovzduší</span></a></li>
+</ul>
+</div>
+</li>
+<li id="nav-2">
+<a href="/informace-a-sluzby/"><span class="txt">Informace a služby</span><span></span></a>
+<div class="submnu" id="submnu-2">
+<ul>
+<li id="nav-20-17"><a href="/informace-a-sluzby/nabizene-sluzby/"><span>Nabízené služby</span></a></li>
+<li id="nav-20-18"><a href="/informace-a-sluzby/mobilni-aplikace/"><span>Mobilní aplikace</span></a></li>
+<li id="nav-20-19"><a href="/informace-a-sluzby/tiskove-zpravy/"><span>Tiskové zprávy</span></a></li>
+<li id="nav-20-20"><a href="/informace-a-sluzby/informace-pro-media-a-verejnost"><span>Informace pro media a veřejnost</span></a></li>
+<li id="nav-20-21"><a href="/informace-a-sluzby/rocni-vyhodnoceni/"><span>Roční vyhodnocení</span></a></li>
+<li id="nav-20-22"><a href="/informace-a-sluzby/mesicni-vyhodnoceni/"><span>Měsíční vyhodnocení</span></a></li>
+<li id="nav-20-23"><a href="/informace-a-sluzby/prezentace-a-vyuka/"><span>Prezentace a výuka</span></a></li>
+<li id="nav-20-24"><a href="/informace-a-sluzby/projekty"><span>Projekty</span></a></li>
+<li id="nav-20-25"><a href="/informace-a-sluzby/knihovna"><span>Knihovna veřejná specializovaná</span></a></li>
+<li id="nav-20-26"><a href="/informace-a-sluzby/nakladatelstvi"><span>Nakladatelství</span></a></li>
+<li id="nav-20-27"><a href="/informace-a-sluzby/casopis-meteorologicke-zpravy"><span>Časopis Meteorologické zprávy</span></a></li>
+<li id="nav-20-28"><a href="/informace-a-sluzby/referencni-klimaticky-rok"><span>Referenční klimatický rok</span></a></li>
+<li id="nav-20-29"><a href="/informace-a-sluzby/exkurze"><span>Exkurze</span></a></li>
+<li id="nav-20-30"><a href="/informace-a-sluzby/nalezli-jste-radiosondu"><span>Nalezli jste radiosondu?</span></a></li>
+</ul>
+</div>
+</li>
+<li id="nav-4">
+<a href="/o-nas/"><span class="txt">O nás</span><span></span></a>
+<div class="submnu" id="submnu-4">
+<ul>
+<li id="nav-40-33"><a href="/o-nas/zakladni-dokumenty"><span>Základní dokumenty</span></a></li>
+<li id="nav-40-34"><a href="/o-nas/organizacni-struktura/"><span>Organizační struktura</span></a></li>
+<li id="nav-40-35"><a href="/o-nas/historie-ustavu"><span>Historie ústavu</span></a></li>
+<li id="nav-40-36"><a href="/o-nas/vedeni-CHMU"><span>Vedení ČHMÚ</span></a></li>
+<li id="nav-40-37"><a href="/o-nas/nabidka-zamestnani"><span>Nabídka zaměstnání</span></a></li>
+<li id="nav-40-38"><a href="/o-nas/verejne-zakazky"><span>Veřejné zakázky</span></a></li>
+<li id="nav-40-39"><a href="/o-nas/protikorupcni-opatreni-v-CHMU"><span>Protikorupční opatření v ČHMÚ</span></a></li>
+<li id="nav-40-40"><a href="/o-nas/zpracovani-osobnich-udaju"><span>Zpracování osobních údajů</span></a></li>
+<li id="nav-40-41"><a href="/o-nas/podatelna-CHMU"><span>Podatelna ČHMÚ</span></a></li>
+<li id="nav-40-42"><a href="/o-nas/nabidka-nepotrebneho-majetku"><span>Nabídka nepotřebného majetku</span></a></li>
+<li id="nav-40-43"><a href="/o-nas/prohlaseni-o-pristupnosti"><span>Prohlášení o přístupnosti</span></a></li>
+<li id="nav-40-44"><a href="/o-nas/poskytovani-informaci"><span>Poskytování informací</span></a></li>
+</ul>
+</div>
+</li>
+<li id="nav-5">
+<a href="/odkazy/"><span class="txt">Odkazy</span><span></span></a>
+<div class="submnu" id="submnu-5">
+<ul>
+<li id="nav-50-47"><a href="/odkazy/resort-zivotniho-prostredi"><span>Resort životního prostředí</span></a></li>
+<li id="nav-50-48"><a href="/odkazy/hamr"><span>HAMR</span></a></li>
+<li id="nav-50-49"><a href="/odkazy/partneri"><span>Partneři</span></a></li>
+<li id="nav-50-50"><a href="/odkazy/narodni-meteorologicke-sluzby/"><span>Národní meteorologické služby</span></a></li>
+<li id="nav-50-51"><a href="/odkazy/katastrofy"><span>Katastrofy</span></a></li>
+<li id="nav-50-52"><a href="/odkazy/meteorologie-pro-mladez"><span>Meteorologie pro mládež</span></a></li>
+</ul>
+</div>
+</li>
+<li id="nav-6">
+<a href="/kontakty/"><span class="txt">Kontakty</span><span></span></a>
+<div class="submnu" id="submnu-6">
+<ul>
+<li id="nav-60-55"><a href="/kontakty/vyhledat"><span>Vyhledat kontakt</span></a></li>
+</ul>
+</div>
+</li>
+<li id="nav-7">
+<a href="/login"><span class="txt">Login</span><span></span></a></li>
+</ul>
+</div>
+<!-- main menu end -->
+</div>
+</div>
+<div id="content-holder">
+<div id="content">
+<div class="home" id="content-body">
+<div id="breadCrumbs">
                         :  Předpovědi &gt;&gt; Předpovědi počasí &gt;&gt; Česká republika &gt;&gt; Týdenní předpověď
                     </div>
-                    <span class="cleaner">&nbsp;</span>
-                    <SCRIPT LANGUAGE="JavaScript1.2">
+<span class="cleaner"> </span>
+<script language="JavaScript1.2">
                         function launchPopup(url, name, width, height) { popup_window = window.open( url, name, 'width=' + width + ',height=' + height +',resizable=yes,scrollbars=yes'); }
-                    </SCRIPT>
-                    <!-- warnings -->
-
-                    <div class="box" id="warnings">
-                        <h3 class="box-title"><span class="txt">Zobrazeni vystrah</span><span></span></h3>
-                        <div class="box-body" id="warnings-body">
-                        <span style="font-size:150%;color:#c31a1a">Při nahrávání obsahu došlo k problému. Zkuste stránku nahrát znovu. Pokud problém přetrvává, ujistětě se, že máte povolený Javascript a že používate podporovaný prohlížeč - <a href="/udrzba-systemu">více informací</a>.</span>
-                        </div>
-                    </div>
-                    <script>
+                    </script>
+<!-- warnings -->
+<div class="box" id="warnings">
+<h3 class="box-title"><span class="txt">Zobrazeni vystrah</span><span></span></h3>
+<div class="box-body" id="warnings-body"><table border="0" cellpadding="3" cellspacing="1" width="100%">
+<tbody><tr>
+<td style="text-align: left; font-size: 11px; color: #030303" width="68%">Není v platnosti žádná výstraha.</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+<script>
                         var xmlhttp = new XMLHttpRequest();
                         xmlhttp.onreadystatechange = function () {
                             if (xmlhttp.readyState==4 && xmlhttp.status==200) {
@@ -418,411 +230,146 @@
                         xmlhttp.open("GET", '/local/alert.xml', true);
                         xmlhttp.send();
                     </script>
-
-                    <hr class="hidden">
-                    <img width="0" height="4" alt="" src="/s/images/spacer.gif">
-                    <br>
-                    <!-- warnings end -->
-
-                    <!-- submenu -->
-                    <div id="left-content-slim" class="content-column">
-                        <div class="box" id="left-menu">
-                            <h3 class="box-title"><span class="txt">Předpovědi počasí</span><span></span></h3>
-                            <div class="box-body">
-                                <ul class="detached-menu" id="detached"><ul>
-
-
-                                            <li class="expanded first">
-                                                <a class="active" onclick="toggleTree(this.parentNode);return false;" href="/predpovedi/predpovedi-pocasi/ceska-republika/">Česká republika</a>
-                                                <div class="submnu" id="submnu"><div class="fake-nav-space"></div><ul>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/ceska-republika/predpoved-na-dnesek-resp-zitra"><span>Předpověď na dnešek, resp. zítra</span></a></li>
-
-
-
-                                            <li class="collapsed ">
-                                                <a  onclick="toggleTree(this.parentNode);return false;" href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/">Kraje</a>
-                                                <div class="submnu" id="submnu"><div class="fake-nav-space"></div><ul>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/karlovarsky"><span>Karlovarský</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/plzensky"><span>Plzeňský</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/ustecky"><span>Ústecký</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/stredocesky"><span>Středočeský</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/praha"><span>Praha</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/jihocesky"><span>Jihočeský</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/liberecky"><span>Liberecký</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/kralovehradecky"><span>Královéhradecký</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/pardubicky"><span>Pardubický</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/vysocina"><span>Vysočina</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/olomoucky"><span>Olomoucký</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/jihomoravsky"><span>Jihomoravský</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/moravskoslezsky"><span>Moravskoslezský</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/zlinsky"><span>Zlínský</span></a></li>
-
-
-
-                                                </ul></div>
-                                            </li>
-
-
-
-                                            <li><a class="active" href="/predpovedi/predpovedi-pocasi/ceska-republika/tydenni-predpoved"><span>Týdenní předpověď</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/ceska-republika/dlouhodoby-vyhled-pocasi"><span>Dlouhodobý výhled počasí</span></a></li>
-
-
-
-                                            <li class="collapsed ">
-                                                <a  onclick="toggleTree(this.parentNode);return false;" href="/predpovedi/predpovedi-pocasi/ceska-republika/biometeorologie/">Biometeorologie</a>
-                                                <div class="submnu" id="submnu"><div class="fake-nav-space"></div><ul>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/ceska-republika/biometeorologie/uvod"><span>Úvod</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/ceska-republika/biometeorologie/model"><span>Model</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/ceska-republika/biometeorologie/oblasti"><span>Oblasti</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/ceska-republika/biometeorologie/predpoved"><span>Předpověď</span></a></li>
-
-
-
-                                                </ul></div>
-                                            </li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/ceska-republika/nebezpeci-pozaru"><span>Nebezpečí požáru</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/ceska-republika/predpoved-aktivity-klistat"><span>Předpověď aktivity klíšťat</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/ceska-republika/pylovy-semafor"><span>Pylový semafor</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/ceska-republika/predpoved-pro-surfare"><span>Předpověď pro surfaře</span></a></li>
-
-
-
-                                            <li class="collapsed ">
-                                                <a  onclick="toggleTree(this.parentNode);return false;" href="/predpovedi/predpovedi-pocasi/ceska-republika/uspesnost-predpovedi-pocasi/">Úspěšnost předpovědí počasí</a>
-                                                <div class="submnu" id="submnu"><div class="fake-nav-space"></div><ul>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/ceska-republika/uspesnost-predpovedi-pocasi/mesicni"><span>Měsíční</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/ceska-republika/uspesnost-predpovedi-pocasi/rocni"><span>Roční</span></a></li>
-
-
-
-                                                </ul></div>
-                                            </li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/ceska-republika/meteorologicka-terminologie"><span>Meteorologická terminologie</span></a></li>
-
-
-
-                                                </ul></div>
-                                            </li>
-
-
-
-                                            <li class="collapsed ">
-                                                <a  onclick="toggleTree(this.parentNode);return false;" href="/predpovedi/predpovedi-pocasi/evropa/">Evropa</a>
-                                                <div class="submnu" id="submnu"><div class="fake-nav-space"></div><ul>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/evropa/synopticka-situace"><span>Synoptická situace</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/evropa/teplota"><span>Teplota</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/evropa/oblacnost-nad-stredomorim"><span>Oblačnost nad Středomořím</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/evropa/primorske-rekreacni-oblasti"><span>Přímořské rekreační oblasti</span></a></li>
-
-
-
-                                                </ul></div>
-                                            </li>
-
-
-
-                                            <li class="collapsed ">
-                                                <a  onclick="toggleTree(this.parentNode);return false;" href="/predpovedi/predpovedi-pocasi/aladin/">Předpovědi  modelu Aladin</a>
-                                                <div class="submnu" id="submnu"><div class="fake-nav-space"></div><ul>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/aladin/aladin-mapy"><span>Aladin - mapy</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/aladin/aladin-meteogramy"><span>Aladin - meteogramy</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/aladin/aladin-animace"><span>Aladin - animace</span></a></li>
-
-
-
-                                                </ul></div>
-                                            </li>
-
-
-
-                                            <li class="collapsed ">
-                                                <a  onclick="toggleTree(this.parentNode);return false;" href="/predpovedi/predpovedi-pocasi/letecke/">Počasí pro létání</a>
-                                                <div class="submnu" id="submnu"><div class="fake-nav-space"></div><ul>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/sportovni-letani"><span>Sportovní létání</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/prehled%20pocasi"><span>Přehled počasí</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/gamet"><span>GAMET</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/namrazy-pro-fl075-a-fl100"><span>Námrazy pro FL075 a FL100</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/swl-mapa"><span>SWL mapa</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/sw-mapa"><span>SW mapa</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/sigmet"><span>SIGMET</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/oblastni-pro-lkaa"><span>Oblastní pro LKAA</span></a></li>
-
-
-
-                                            <li class="collapsed ">
-                                                <a  onclick="toggleTree(this.parentNode);return false;" href="/predpovedi/predpovedi-pocasi/letecke/prizemni-vitr-teplota-tlak/">Přízemní vítr, teplota, tlak</a>
-                                                <div class="submnu" id="submnu"><div class="fake-nav-space"></div><ul>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/prizemni-vitr-teplota-tlak/praha-brno-ostrava"><span>Praha, Brno, Ostrava</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/prizemni-vitr-teplota-tlak/liberec-karlovy-vary-plzen"><span>Liberec, Karlovy Vary, Plzeň</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/prizemni-vitr-teplota-tlak/ceske-budejovice-ardubice-kunovice"><span>České Budějovice, Pardubice, Kunovice</span></a></li>
-
-
-
-                                                </ul></div>
-                                            </li>
-
-
-
-                                            <li class="collapsed ">
-                                                <a  onclick="toggleTree(this.parentNode);return false;" href="/predpovedi/predpovedi-pocasi/letecke/oblacnost-srazky-vlhkost/">Oblačnost, srážky, vlhkost</a>
-                                                <div class="submnu" id="submnu"><div class="fake-nav-space"></div><ul>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/oblacnost-srazky-vlhkost/praha-ruzyne-larlovy-vary"><span>Praha-Ruzyně, Karlovy Vary</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/oblacnost-srazky-vlhkost/brno-turany-ostrava-Mosnov"><span>Brno-Tuřany, Ostrava-Mošnov</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/oblacnost-srazky-vlhkost/liberec-plzen-line"><span>Liberec, Plzeň-Líně</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/oblacnost-srazky-vlhkost/pardubice-ceske-budejovice"><span>Pardubice, České Budějovice</span></a></li>
-
-
-
-                                                </ul></div>
-                                            </li>
-
-
-
-                                            <li class="collapsed ">
-                                                <a  onclick="toggleTree(this.parentNode);return false;" href="/predpovedi/predpovedi-pocasi/letecke/vyskovy-vitr/">Výškový vítr</a>
-                                                <div class="submnu" id="submnu"><div class="fake-nav-space"></div><ul>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/vyskovy-vitr/2000-ft"><span>2000 ft</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/vyskovy-vitr/3000-ft"><span>3000 ft</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/vyskovy-vitr/FL050"><span>FL050</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/vyskovy-vitr/FL080"><span>FL080</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/vyskovy-vitr/FL100"><span>FL100</span></a></li>
-
-
-
-                                                </ul></div>
-                                            </li>
-
-
-
-                                            <li class="collapsed ">
-                                                <a  onclick="toggleTree(this.parentNode);return false;" href="/predpovedi/predpovedi-pocasi/letecke/balony-a-plachtari/">Balóny a plachtaři</a>
-                                                <div class="submnu" id="submnu"><div class="fake-nav-space"></div><ul>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/balony-a-plachtari/podminky-konvekce"><span>Podmínky konvekce</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/balony-a-plachtari/vitr-oblacnost-a-srazky"><span>Vítr, oblačnost a srážky</span></a></li>
-
-
-
-                                                </ul></div>
-                                            </li>
-
-
-
-                                            <li class="collapsed ">
-                                                <a  onclick="toggleTree(this.parentNode);return false;" href="/predpovedi/predpovedi-pocasi/letecke/klimaticke-charakteristiky-letist/">Klimatické charakteristiky letišť</a>
-                                                <div class="submnu" id="submnu"><div class="fake-nav-space"></div><ul>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/klimaticke-charakteristiky-letist/uvod"><span>Úvod</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/klimaticke-charakteristiky-letist/praha-ruzyne"><span>Praha Ruzyně</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/klimaticke-charakteristiky-letist/ostrava-mosnov"><span>Ostrava Mošnov</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/klimaticke-charakteristiky-letist/brno-turany"><span>Brno Tuřany</span></a></li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/klimaticke-charakteristiky-letist/karlovy-vary"><span>Karlovy Vary</span></a></li>
-
-
-
-                                                </ul></div>
-                                            </li>
-
-
-
-                                            <li><a  href="/predpovedi/predpovedi-pocasi/letecke/meteorologicke-sluzby-civilnimu-letectvi-kontakty"><span>Meteorologické služby civilnímu letectví - kontakty</span></a></li>
-
-
-
-                                                </ul></div>
-                                            </li>
-
-
-                                </ul></ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- submenu end -->
-
-                    <!-- content -->
-                    <div id="right-content-wide" class="content-column">
+<hr class="hidden"/>
+<img alt="" height="4" src="/s/images/spacer.gif" width="0"/>
+<br/>
+<!-- warnings end -->
+<!-- submenu -->
+<div class="content-column" id="left-content-slim">
+<div class="box" id="left-menu">
+<h3 class="box-title"><span class="txt">Předpovědi počasí</span><span></span></h3>
+<div class="box-body">
+<ul class="detached-menu" id="detached"><ul>
+<li class="expanded first">
+<a class="active" href="/predpovedi/predpovedi-pocasi/ceska-republika/" onclick="toggleTree(this.parentNode);return false;">Česká republika</a>
+<div class="submnu" id="submnu"><div class="fake-nav-space"></div><ul>
+<li><a href="/predpovedi/predpovedi-pocasi/ceska-republika/predpoved-na-dnesek-resp-zitra"><span>Předpověď na dnešek, resp. zítra</span></a></li>
+<li class="collapsed">
+<a href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/" onclick="toggleTree(this.parentNode);return false;">Kraje</a>
+<div class="submnu" id="submnu"><div class="fake-nav-space"></div><ul>
+<li><a href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/karlovarsky"><span>Karlovarský</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/plzensky"><span>Plzeňský</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/ustecky"><span>Ústecký</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/stredocesky"><span>Středočeský</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/praha"><span>Praha</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/jihocesky"><span>Jihočeský</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/liberecky"><span>Liberecký</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/kralovehradecky"><span>Královéhradecký</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/pardubicky"><span>Pardubický</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/vysocina"><span>Vysočina</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/olomoucky"><span>Olomoucký</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/jihomoravsky"><span>Jihomoravský</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/moravskoslezsky"><span>Moravskoslezský</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/ceska-republika/kraje/zlinsky"><span>Zlínský</span></a></li>
+</ul></div>
+</li>
+<li><a class="active" href="/predpovedi/predpovedi-pocasi/ceska-republika/tydenni-predpoved"><span>Týdenní předpověď</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/ceska-republika/dlouhodoby-vyhled-pocasi"><span>Dlouhodobý výhled počasí</span></a></li>
+<li class="collapsed">
+<a href="/predpovedi/predpovedi-pocasi/ceska-republika/biometeorologie/" onclick="toggleTree(this.parentNode);return false;">Biometeorologie</a>
+<div class="submnu" id="submnu"><div class="fake-nav-space"></div><ul>
+<li><a href="/predpovedi/predpovedi-pocasi/ceska-republika/biometeorologie/uvod"><span>Úvod</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/ceska-republika/biometeorologie/model"><span>Model</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/ceska-republika/biometeorologie/oblasti"><span>Oblasti</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/ceska-republika/biometeorologie/predpoved"><span>Předpověď</span></a></li>
+</ul></div>
+</li>
+<li><a href="/predpovedi/predpovedi-pocasi/ceska-republika/nebezpeci-pozaru"><span>Nebezpečí požáru</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/ceska-republika/predpoved-aktivity-klistat"><span>Předpověď aktivity klíšťat</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/ceska-republika/pylovy-semafor"><span>Pylový semafor</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/ceska-republika/predpoved-pro-surfare"><span>Předpověď pro surfaře</span></a></li>
+<li class="collapsed">
+<a href="/predpovedi/predpovedi-pocasi/ceska-republika/uspesnost-predpovedi-pocasi/" onclick="toggleTree(this.parentNode);return false;">Úspěšnost předpovědí počasí</a>
+<div class="submnu" id="submnu"><div class="fake-nav-space"></div><ul>
+<li><a href="/predpovedi/predpovedi-pocasi/ceska-republika/uspesnost-predpovedi-pocasi/mesicni"><span>Měsíční</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/ceska-republika/uspesnost-predpovedi-pocasi/rocni"><span>Roční</span></a></li>
+</ul></div>
+</li>
+<li><a href="/predpovedi/predpovedi-pocasi/ceska-republika/meteorologicka-terminologie"><span>Meteorologická terminologie</span></a></li>
+</ul></div>
+</li>
+<li class="collapsed">
+<a href="/predpovedi/predpovedi-pocasi/evropa/" onclick="toggleTree(this.parentNode);return false;">Evropa</a>
+<div class="submnu" id="submnu"><div class="fake-nav-space"></div><ul>
+<li><a href="/predpovedi/predpovedi-pocasi/evropa/synopticka-situace"><span>Synoptická situace</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/evropa/teplota"><span>Teplota</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/evropa/oblacnost-nad-stredomorim"><span>Oblačnost nad Středomořím</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/evropa/primorske-rekreacni-oblasti"><span>Přímořské rekreační oblasti</span></a></li>
+</ul></div>
+</li>
+<li class="collapsed">
+<a href="/predpovedi/predpovedi-pocasi/aladin/" onclick="toggleTree(this.parentNode);return false;">Předpovědi  modelu Aladin</a>
+<div class="submnu" id="submnu"><div class="fake-nav-space"></div><ul>
+<li><a href="/predpovedi/predpovedi-pocasi/aladin/aladin-mapy"><span>Aladin - mapy</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/aladin/aladin-meteogramy"><span>Aladin - meteogramy</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/aladin/aladin-animace"><span>Aladin - animace</span></a></li>
+</ul></div>
+</li>
+<li class="collapsed">
+<a href="/predpovedi/predpovedi-pocasi/letecke/" onclick="toggleTree(this.parentNode);return false;">Počasí pro létání</a>
+<div class="submnu" id="submnu"><div class="fake-nav-space"></div><ul>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/sportovni-letani"><span>Sportovní létání</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/prehled%20pocasi"><span>Přehled počasí</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/gamet"><span>GAMET</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/namrazy-pro-fl075-a-fl100"><span>Námrazy pro FL075 a FL100</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/swl-mapa"><span>SWL mapa</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/sw-mapa"><span>SW mapa</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/sigmet"><span>SIGMET</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/oblastni-pro-lkaa"><span>Oblastní pro LKAA</span></a></li>
+<li class="collapsed">
+<a href="/predpovedi/predpovedi-pocasi/letecke/prizemni-vitr-teplota-tlak/" onclick="toggleTree(this.parentNode);return false;">Přízemní vítr, teplota, tlak</a>
+<div class="submnu" id="submnu"><div class="fake-nav-space"></div><ul>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/prizemni-vitr-teplota-tlak/praha-brno-ostrava"><span>Praha, Brno, Ostrava</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/prizemni-vitr-teplota-tlak/liberec-karlovy-vary-plzen"><span>Liberec, Karlovy Vary, Plzeň</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/prizemni-vitr-teplota-tlak/ceske-budejovice-ardubice-kunovice"><span>České Budějovice, Pardubice, Kunovice</span></a></li>
+</ul></div>
+</li>
+<li class="collapsed">
+<a href="/predpovedi/predpovedi-pocasi/letecke/oblacnost-srazky-vlhkost/" onclick="toggleTree(this.parentNode);return false;">Oblačnost, srážky, vlhkost</a>
+<div class="submnu" id="submnu"><div class="fake-nav-space"></div><ul>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/oblacnost-srazky-vlhkost/praha-ruzyne-larlovy-vary"><span>Praha-Ruzyně, Karlovy Vary</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/oblacnost-srazky-vlhkost/brno-turany-ostrava-Mosnov"><span>Brno-Tuřany, Ostrava-Mošnov</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/oblacnost-srazky-vlhkost/liberec-plzen-line"><span>Liberec, Plzeň-Líně</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/oblacnost-srazky-vlhkost/pardubice-ceske-budejovice"><span>Pardubice, České Budějovice</span></a></li>
+</ul></div>
+</li>
+<li class="collapsed">
+<a href="/predpovedi/predpovedi-pocasi/letecke/vyskovy-vitr/" onclick="toggleTree(this.parentNode);return false;">Výškový vítr</a>
+<div class="submnu" id="submnu"><div class="fake-nav-space"></div><ul>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/vyskovy-vitr/2000-ft"><span>2000 ft</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/vyskovy-vitr/3000-ft"><span>3000 ft</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/vyskovy-vitr/FL050"><span>FL050</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/vyskovy-vitr/FL080"><span>FL080</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/vyskovy-vitr/FL100"><span>FL100</span></a></li>
+</ul></div>
+</li>
+<li class="collapsed">
+<a href="/predpovedi/predpovedi-pocasi/letecke/balony-a-plachtari/" onclick="toggleTree(this.parentNode);return false;">Balóny a plachtaři</a>
+<div class="submnu" id="submnu"><div class="fake-nav-space"></div><ul>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/balony-a-plachtari/podminky-konvekce"><span>Podmínky konvekce</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/balony-a-plachtari/vitr-oblacnost-a-srazky"><span>Vítr, oblačnost a srážky</span></a></li>
+</ul></div>
+</li>
+<li class="collapsed">
+<a href="/predpovedi/predpovedi-pocasi/letecke/klimaticke-charakteristiky-letist/" onclick="toggleTree(this.parentNode);return false;">Klimatické charakteristiky letišť</a>
+<div class="submnu" id="submnu"><div class="fake-nav-space"></div><ul>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/klimaticke-charakteristiky-letist/uvod"><span>Úvod</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/klimaticke-charakteristiky-letist/praha-ruzyne"><span>Praha Ruzyně</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/klimaticke-charakteristiky-letist/ostrava-mosnov"><span>Ostrava Mošnov</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/klimaticke-charakteristiky-letist/brno-turany"><span>Brno Tuřany</span></a></li>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/klimaticke-charakteristiky-letist/karlovy-vary"><span>Karlovy Vary</span></a></li>
+</ul></div>
+</li>
+<li><a href="/predpovedi/predpovedi-pocasi/letecke/meteorologicke-sluzby-civilnimu-letectvi-kontakty"><span>Meteorologické služby civilnímu letectví - kontakty</span></a></li>
+</ul></div>
+</li>
+</ul></ul>
+</div>
+</div>
+</div>
+<!-- submenu end -->
+<!-- content -->
+<div class="content-column" id="right-content-wide">
 <script>
 function loadstatic(filepath, divid, cfg) {
     if ( filepath == "" ) return;
@@ -942,69 +489,170 @@ function meteomapmagic(bp, fn) {
     return newfn;
 }
 </script>
-
-
-
-
-    <div class="box" id="nav-nav">
-        <h3 class="box-title"><span class="txt">Týdenní předpověď</span><span></span></h3>
-        <div class="box-buttons"></div>
-        <div class="box-body" >
-
-            <div id="loadedcontent-8"></div>
-            <script>loadstatic( '/files/portal/docs/meteo/om/predpovedi/tyden/p_tyden_graf.html', '#loadedcontent-8', {"8": {"hrefs": false, "inutf8": false}, "7": {"hrefs": false, "inutf8": false}}['8'] );</script>
-        </div>
-    </div>
-    <hr class="hidden" />
-
-
-
-    <div class="box" id="nav-nav">
-        <h3 class="box-title"><span class="txt"></span><span></span></h3>
-        <div class="box-buttons"></div>
-        <div class="box-body" >
-
-            <div id="loadedcontent-7"></div>
-            <script>loadstatic( '/files/portal/docs/meteo/om/predpovedi/tyden/p_tyden_text.html', '#loadedcontent-7', {"8": {"hrefs": false, "inutf8": false}, "7": {"hrefs": false, "inutf8": false}}['7'] );</script>
-        </div>
-    </div>
-    <hr class="hidden" />
-
-
+<div class="box" id="nav-nav">
+<h3 class="box-title"><span class="txt">Týdenní předpověď</span><span></span></h3>
+<div class="box-buttons"></div>
+<div class="box-body">
+<div id="loadedcontent-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Týdenní předpověď grafická</title>
+<style>
+      .nadpis {text-align: left; color: #14387f; font-size: 15px; font-weight: bold; padding-left: 1ex}
+      .podnadpis {text-align: left; color: #14387f; font-size: 12px; font-weight: bold; padding-left: 1ex}
+      .textik_cerveny {text-align: left; font-size: 12px; color: #ff0000; padding-left: 1ex}
+      .textik_modry {text-align: left; font-size: 12px; color: #0000ff; padding-left: 1ex}
+    </style>
+<br/>
+<br/>
+<p class="nadpis">Předpokládaný vývoj počasí v ČR od soboty 22.10. do neděle 30.10.2022</p>
+<br/>
+<p class="podnadpis">Vydáno dne 21.10.2022</p>
+<img src="/files/portal/docs/meteo/om/predpovedi/tyden/p_tyden_graf.bmp" usemap="#teploty"/>
+<map name="teploty">
+<area coords="41, 111, 5" nohref="" shape="circle" title="Sobota 22.10.2022
+Průměrná nejvyšší denní teplota: 13 °C"/>
+<area coords="41, 198, 5" nohref="" shape="circle" title="Sobota 22.10.2022
+Průměrná nejnižší noční teplota: 7 °C"/>
+<area coords="17, 322, 65, 370" nohref="" shape="rectangle" title="Sobota 22.10.2022
+Zataženo, déšť (přeháňka)"/>
+<area coords="125, 53, 5" nohref="" shape="circle" title="Neděle 23.10.2022
+Průměrná nejvyšší denní teplota: 17 °C"/>
+<area coords="125, 198, 5" nohref="" shape="circle" title="Neděle 23.10.2022
+Průměrná nejnižší noční teplota: 7 °C"/>
+<area coords="101, 322, 149, 370" nohref="" shape="rectangle" title="Neděle 23.10.2022
+Oblačno"/>
+<area coords="209, 53, 5" nohref="" shape="circle" title="Pondělí 24.10.2022
+Průměrná nejvyšší denní teplota: 17 °C"/>
+<area coords="209, 169, 5" nohref="" shape="circle" title="Pondělí 24.10.2022
+Průměrná nejnižší noční teplota: 9 °C"/>
+<area coords="185, 322, 233, 370" nohref="" shape="rectangle" title="Pondělí 24.10.2022
+Oblačno, déšť (přeháňka)"/>
+<area coords="293, 53, 5" nohref="" shape="circle" title="Úterý 25.10.2022
+Průměrná nejvyšší denní teplota: 17 °C"/>
+<area coords="293, 155, 5" nohref="" shape="circle" title="Úterý 25.10.2022
+Průměrná nejnižší noční teplota: 10 °C"/>
+<area coords="269, 322, 317, 370" nohref="" shape="rectangle" title="Úterý 25.10.2022
+Polojasno, déšť (přeháňka)"/>
+<area coords="377, 68, 5" nohref="" shape="circle" title="Středa 26.10.2022
+Průměrná nejvyšší denní teplota: 16 °C"/>
+<area coords="377, 198, 5" nohref="" shape="circle" title="Středa 26.10.2022
+Průměrná nejnižší noční teplota: 7 °C"/>
+<area coords="353, 322, 401, 370" nohref="" shape="rectangle" title="Středa 26.10.2022
+Oblačno"/>
+<area coords="461, 53, 5" nohref="" shape="circle" title="Čtvrtek 27.10.2022
+Průměrná nejvyšší denní teplota: 17 °C"/>
+<area coords="461, 198, 5" nohref="" shape="circle" title="Čtvrtek 27.10.2022
+Průměrná nejnižší noční teplota: 7 °C"/>
+<area coords="437, 322, 485, 370" nohref="" shape="rectangle" title="Čtvrtek 27.10.2022
+Oblačno"/>
+<area coords="545, 68, 5" nohref="" shape="circle" title="Pátek 28.10.2022
+Průměrná nejvyšší denní teplota: 16 °C"/>
+<area coords="545, 184, 5" nohref="" shape="circle" title="Pátek 28.10.2022
+Průměrná nejnižší noční teplota: 8 °C"/>
+<area coords="521, 322, 569, 370" nohref="" shape="rectangle" title="Pátek 28.10.2022
+Oblačno"/>
+<area coords="629, 82, 5" nohref="" shape="circle" title="Sobota 29.10.2022
+Průměrná nejvyšší denní teplota: 15 °C"/>
+<area coords="629, 169, 5" nohref="" shape="circle" title="Sobota 29.10.2022
+Průměrná nejnižší noční teplota: 9 °C"/>
+<area coords="605, 322, 653, 370" nohref="" shape="rectangle" title="Sobota 29.10.2022
+Oblačno"/>
+<area coords="713, 97, 5" nohref="" shape="circle" title="Neděle 30.10.2022
+Průměrná nejvyšší denní teplota: 14 °C"/>
+<area coords="713, 169, 5" nohref="" shape="circle" title="Neděle 30.10.2022
+Průměrná nejnižší noční teplota: 9 °C"/>
+<area coords="689, 322, 737, 370" nohref="" shape="rectangle" title="Neděle 30.10.2022
+Oblačno"/>
+</map>
+<br/>
+<p class="textik_cerveny">Červená křivka znázorňuje průměrné nejvyšší denní teploty ve °C.</p>
+<br/>
+<p class="textik_modry">Modrá křivka znázorňuje průměrné nejnižší noční teploty ve °C.</p>
+<br/>
 </div>
-                    <!-- end content -->
-                    <span class="cleaner">&nbsp;</span>
-                </div>
-            </div>
-        </div>
-        <!-- footer -->
-        <div id="footer-holder" class="footer-home">
-            <div id="footer">
-                <div id="secondary-menu">
-
-                        <a href="/predpovedi/">Předpovědi</a> |
+<script>loadstatic( '/files/portal/docs/meteo/om/predpovedi/tyden/p_tyden_graf.html', '#loadedcontent-8', {"8": {"hrefs": false, "inutf8": false}, "7": {"hrefs": false, "inutf8": false}}['8'] );</script>
+</div>
+</div>
+<hr class="hidden"/>
+<div class="box" id="nav-nav">
+<h3 class="box-title"><span class="txt"></span><span></span></h3>
+<div class="box-buttons"></div>
+<div class="box-body">
+<div id="loadedcontent-7">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<style>
+      .nadpis {text-align: left; color: #14387f; font-size: 15px; font-weight: bold; padding-left: 1ex}
+      .podnadpis {text-align: left; color: #14387f; font-size: 12px; font-weight: bold; padding-left: 1ex}
+      .textik1 {text-align: left; font-size: 12px; color: #030303; font-weight: bold}
+      .textik2 {text-align: justify; font-size: 11px; color: #030303; padding-right: 1ex}
+    </style>
+<title>Týdenní předpověď počasí</title>
+<br/>
+<p class="nadpis">Vývoj situace a počasí pro ČR od soboty 22.10. do soboty 29.10.2022</p>
+<br/>
+<p class="podnadpis">Vydáno dne  21.10.2022 12.00 SELČ</p>
+<br/>
+<br/>
+<p class="textik1">Situace:</p>
+<p class="textik2"> V sobotu ovlivní počasí u nás od jihozápadu frontální vlna. Za ní se do střední Evropy od jihozápadu rozšíří výběžek vyššího tlaku vzduchu, který se bude přesouvat dále k východu. V příštím týdnu budou postupovat v jihozápadním, postupně až západním proudění přes střední Evropu jednotlivé frontální systémy, které se budou střídat z výběžky vyššího tlaku vzduchu. Ve druhé polovině příštího týdne se nad východní Evropou postupně vytvoří tlaková výše, kolem které k nám bude proudit teplý vzduch od jihu.</p>
+<br/>
+<p class="textik1">Předpověď na sobotu (00-24):</p>
+<p class="textik2"> Zataženo až oblačno, ráno ojediněle mlhy. Od jihozápadu občas déšť. Večer ustávání deště, místy ubývání oblačnosti a postupně tvorba mlh. Nejnižší noční teploty 10 až 6 °C, v údolích až 4 °C. Nejvyšší denní teploty 11 až 15 °C, v 1000 m na horách kolem 10 °C. Slabý jihozápadní až západní nebo proměnlivý vítr do 4 m/s.</p>
+<br/>
+<p class="textik1">Předpověď na neděli (00-24):</p>
+<p class="textik2"> Převážně polojasno, místy mlhy nebo zataženo nízkou oblačností, která se ojediněle udrží po celý den. Ojediněle mrholení. Večer přibývání frontální oblačnosti od západu. Nejnižší noční teploty 9 až 5 °C. Nejvyšší denní teploty 15 až 19 °C, při mlze nebo nízké oblačnosti kolem 12 °C. Slabý jižní až jihovýchodní vítr 1 až 4 m/s.</p>
+<br/>
+<p class="textik1">Předpověď na pondělí (00-24):</p>
+<p class="textik2"> Oblačno až zataženo, místy přechodně až polojasno. Zpočátku hlavně na Moravě místy mlhy a ojediněle i mrholení, od západu postupně místy občasný déšť nebo přeháňky. Nejnižší noční teploty 11 až 7 °C. Nejvyšší denní teploty 15 až 19 °C. Mírný jižní až jihozápadní vítr 2 až 5 m/s.</p>
+<br/>
+<p class="textik1">Předpověď na úterý (00-24):</p>
+<p class="textik2"> Oblačno až polojasno a místy přeháňky. Později ustávání srážek. Nejnižší noční teploty 12 až 8 °C. Nejvyšší denní teploty 15 až 19 °C. Mírný jihozápadní až západní vítr 2 až 6 m/s bude večer slábnout.</p>
+<br/>
+<p class="textik1">Předpověď na středu (00-24):</p>
+<p class="textik2"> Polojasno až oblačno, ojediněle přeháňky. Místy mlhy nebo nízká oblačnost, které se ojediněle udrží po většinu dne. Nejnižší noční teploty 9 až 5 °C. Nejvyšší denní teploty 15 až 19 °C, při déletrvající mlze nebo nízké oblačnosti kolem 12 °C. Slabý proměnlivý nebo jižní vítr 1 až 4 m/s.</p>
+<br/>
+<p class="textik1">Vyhlídka počasí od čtvrtka do soboty:</p>
+<p class="textik2"> Polojasno až oblačno, místy mlhy nebo zataženo nízkou oblačností. Ojediněle mrholení nebo slabý déšť. Nejnižší noční teploty 11 až 6 °C. Nejvyšší denní teploty 15 až 20 °C, při mlze nebo nízké oblačnosti kolem 12 °C.</p>
+<br/>
+<hr align="left" color="#14387f" size="1px" width="757"/>
+<p class="textik2">== ČHMÚ, KOMO-PRAHA / Handžák ==</p>
+<br/>
+</div>
+<script>loadstatic( '/files/portal/docs/meteo/om/predpovedi/tyden/p_tyden_text.html', '#loadedcontent-7', {"8": {"hrefs": false, "inutf8": false}, "7": {"hrefs": false, "inutf8": false}}['7'] );</script>
+</div>
+</div>
+<hr class="hidden"/>
+</div>
+<!-- end content -->
+<span class="cleaner"> </span>
+</div>
+</div>
+</div>
+<!-- footer -->
+<div class="footer-home" id="footer-holder">
+<div id="footer">
+<div id="secondary-menu">
+<a href="/predpovedi/">Předpovědi</a> |
                         <a href="/aktualni-situace/">Aktuální situace</a> |
                         <a href="/historicka-data/">Historická data</a> |
                         <a href="/informace-pro-vas/">Informace pro Vás</a> |
                         <a href="/o-nas/">O nás</a> |
                         <a href="/odkazy/">Odkazy</a> |
                         <a href="/kontakty/">Kontakty</a>
-
-                    <div class="links">
-                        <a href="/">Home</a> | <a href="/sitemap">Mapa stránek</a> |
+<div class="links">
+<a href="/">Home</a> | <a href="/sitemap">Mapa stránek</a> |
                         <a href="/podminky-uziti">Podmínky užití</a> |
                         <a href="/o-nas/prohlaseni-o-pristupnosti">Prohlášení o přístupnosti</a> |
                         2
                     </div>
-                </div>
-                <div id="cc-holder"><a rel="license" target="external" href="http://creativecommons.org/licenses/by-nc-nd/3.0/cz/">
-                    <img src="/s/images/cc/88x31.png" alt="Creative Commons License - non commercial"/></a></div>
-                <div id="certifikaty">Certifikáty ISO 9001 aj. <a href="/o-nas/zakladni-dokumenty" class="targetblank">Certifikaty</a>
-                    <a href="/o-nas/zakladni-dokumenty" class="targetblank fake"></a></div>
-                <span class="cleaner">&nbsp;</span>
-            </div>
-        </div>
-        <!-- footer end -->
-    </div>
-</body>
-</html>
+</div>
+<div id="cc-holder"><a href="http://creativecommons.org/licenses/by-nc-nd/3.0/cz/" rel="license" target="external">
+<img alt="Creative Commons License - non commercial" src="/s/images/cc/88x31.png"/></a></div>
+<div id="certifikaty">Certifikáty ISO 9001 aj. <a class="targetblank" href="/o-nas/zakladni-dokumenty">Certifikaty</a>
+<a class="targetblank fake" href="/o-nas/zakladni-dokumenty"></a></div>
+<span class="cleaner"> </span>
+</div>
+</div>
+<!-- footer end -->
+</div>
+<div class="cookieConsentContainer" id="cookieConsentContainer" style="opacity: 1; display: block;"><div class="cookieTitle"><a>Cookies.</a></div><div class="cookieDesc"><p>Tyto webové stránky používají k poskytování svých služeb soubory Cookies. Používáním těchto webových stránek souhlasíte s použitím souborů Cookies.</p> <p><a href="/files/portal/docs/ruzne/GDPR/c-Zasady_prace_s_cookies_zakladni_2021_verze_12072021.pdf" target="_blank">Zásady práce s cookies</a></p></div><div class="cookieButton"><a onclick="cookieDismiss();">Rozumím</a></div></div></body></html>

@@ -1,39 +1,49 @@
 import os
 import time
 import shutil
+import requests
+from time import sleep
+from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from time import sleep
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.support.ui import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.support import expected_conditions as EC
 
 
 # Open web
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-# driver = webdriver.Chrome("/home/evzen/doc/data/chromedriver")
-driver.maximize_window()
-# driver.execute_script("document.body.style.zoom = 'zoom 80%'")
+sleep(1)
 driver.get(
     "https://www.chmi.cz/predpovedi/predpovedi-pocasi/ceska-republika/tydenni-predpoved"
 )
 sleep(2)
-##Agree to conditions
-sat = driver.find_element(By.XPATH, "//*[@class='textik1']")
+##Parse html
+# sat = driver.find_element(By.XPATH, "//*[@class='textik1']")
+# print(sat.text)
+html = driver.page_source
+soup = BeautifulSoup(html, "html.parser")
+all_ps = soup.find_all("p")
 
-print(sat.text)
-# user_name.send_keys("evzen")
-# sleep(5)
-# agree.click()
+for x in all_ps:
+    print(x.text)
 
 
-# #Deselect Approved
+with open(
+    "/home/evzen/doc/script/python/fastapi/vedro/backend/static/files/chmi.html",
+    "w",
+    encoding="utf-8",
+) as file:
+    file.write(str(soup))
 # deselect_approved = driver.find_element(By.XPATH, '//input[@aria-label="Approved"]/following::div')
-# deselect_approved.click()
-# sleep(0.05)
-#
 
-sleep(5)
+with open(
+    "/home/evzen/doc/script/python/fastapi/vedro/backend/static/files/chmip.html",
+    "w",
+    encoding="utf-8",
+) as file:
+    file.write(str(all_ps))
+sleep(2)
 driver.quit()
