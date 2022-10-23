@@ -1,0 +1,21 @@
+{% extends "shared/base.html" %}
+
+
+{% block title %}
+  <title>Job Board</title>
+{% endblock %}
+
+{% block content %}
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <h1 class="display-5">Find Jobs..</h1>
+    </div>
+  </div>
+  <div class="row">
+      {% for x in data %}
+      		{% include "components/card.html" %}
+      {% endfor %}
+  </div>
+</div>
+{% endblock %}
