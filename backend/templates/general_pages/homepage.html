@@ -1,7 +1,7 @@
 {% extends "shared/base.html" %}
 
 {% block title %}
-  <title>Vedro</title>
+  <title>Vedro Home</title>
 {% endblock %}
 
 {% block content %}
@@ -9,14 +9,14 @@
 <div class="container-fluid">
 
   <div class="row ">
-    <h2 class ="h2 text-center mt-1 fw-bold " >
-      Weather in Czech Republic
+    <h2 class ="h2 text-center mt-2 fw-bold " >
+      Current weather in Czech Republic
     </h2>
   </div>
 
 
 
-  <div class="row mt-2 ml-2">
+  <div class="row mt-4 ml-2">
 
     <div class="col">
       <div class="card text-center"style="width: 13rem;">
@@ -160,11 +160,32 @@
   <div class="row ">
     <div class="col">
 
-    <h2 class ="h2 text-center mt-3 fw-bold " >
+    <h2 class ="h2 text-center mt-5 fw-bold " >
       Radar
     </h2>
+
+    <form action="/radar" method="get">
+    <div class="row justify-content-center">
+      <div class="col-md-4 ">
+        <div class="d-grid gap-2 col-6 mx-auto">
+           <button  class="btn btn-outline-dark mt-2" type="submit" ">Radar</button>
+        </div>
+      </div>
+    </div>
+    </form>
+
+    <form action="/forecast" method="get">
+    <div class="row justify-content-center">
+      <div class="col-md-4 ">
+        <div class="d-grid gap-2 col-6 mx-auto">
+           <button  class="btn btn-outline-dark mt-2" type="submit" ">Forecast</button>
+        </div>
+      </div>
+    </div>
+    </form>
+
+
   </div>
-  {{ mymap | safe }}
 </div>
 </div>
 

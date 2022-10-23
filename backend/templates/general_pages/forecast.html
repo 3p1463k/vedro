@@ -1,0 +1,32 @@
+{% extends "shared/base.html" %}
+
+{% block title %}
+  <title>Forecast Vedro</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+  <div class="row ">
+    <div class="col">
+
+    <h2 class ="h2 text-center mt-1 fw-bold " >
+      Forecast for Czech Republic
+    </h2>
+
+  <div class="row mt-2">
+
+    {% for x in data %}
+
+    <p class="fw-bold text-center"> {{ x[0] }} </p>
+    <p> {{ x[1] }} </p>
+
+    {% endfor %}
+
+  </div>
+</div>
+</div>
+</div>
+
+
+{% endblock %}

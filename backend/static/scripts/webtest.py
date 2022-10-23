@@ -14,7 +14,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 # Open web
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+# driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 sleep(1)
 driver.get(
     "https://www.chmi.cz/predpovedi/predpovedi-pocasi/ceska-republika/tydenni-predpoved"
