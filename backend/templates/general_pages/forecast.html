@@ -10,22 +10,24 @@
   <div class="row ">
     <div class="col">
 
-    <h2 class ="h2 text-center mt-1 fw-bold " >
+      <h2 class ="h2 text-center mt-4 fw-bold " >
       Forecast for Czech Republic
-    </h2>
+      </h2>
+      <div class="row mt-4">
 
-  <div class="row mt-2">
+          {% for x in mylist1 %}
 
-    {% for x in data %}
+          <h5 class="fw-bold text-center"> {{ x[0] }} </h5>
+          <p class="text-center"> {{ x[1] }} </p>
+          <p class="text-center"> {{ x[2] }} </p>
 
-    <p class="fw-bold text-center"> {{ x[0] }} </p>
-    <p> {{ x[1] }} </p>
 
-    {% endfor %}
 
+          {% endfor %}
+
+        </div>
+      </div>
   </div>
-</div>
-</div>
 </div>
 
 

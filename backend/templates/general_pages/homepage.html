@@ -19,15 +19,15 @@
   <div class="row mt-4 ml-2">
 
     <div class="col">
-      <div class="card text-center border-0"style="width: 13rem;">
-        <img src="static/images/cloud_day_lightbolt_rain_sun.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Mon</h5>
-          <h4 class="card-text fw-bold">28 C</h4>
+      <div class="card text-center border-0"style="width: 18rem;">
+        <img src="static/images/icons/suncloudrainlite.png" class="card-img-top" alt="...">
+        <div class="card-body ">
+          <h5 class="card-title">{{mylist[0][1]}}</h5>
+          <h4 class="card-text fw-bold">{{mylist[0][8]}} C</h4>
         </div>
 
-          <p class="card-text">Vítr: JZ 12 km/h</p>
-          <p class="card-text">Vlhkost: 91%</p>
+          <p class="card-text">Vítr: {{mylist[0][2]}} km/h</p>
+          <p class="card-text">Vlhkost: 41%</p>
 
         <div class="card-body">
           <div class="d-grid col-10 mx-auto">
@@ -38,14 +38,14 @@
     </div>
 
     <div class="col">
-      <div class="card text-center border-0"style="width: 13rem;">
-        <img src="static/images/cloud_day_lightbolt_rain_sun.png" class="card-img-top" alt="...">
+      <div class="card text-center border-0"style="width: 18rem;">
+        <img src="static/images/icons/sun.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Tue</h5>
-          <h4 class="card-text fw-bold">19 C</h4>
+          <h5 class="card-title">{{mylist[1][1]}}</h5>
+          <h4 class="card-text fw-bold">{{mylist[1][8]}} C</h4>
         </div>
 
-          <p class="card-text">Vítr: JZ 12 km/h</p>
+          <p class="card-text">Vítr: {{mylist[1][2]}} km/h</p>
           <p class="card-text">Vlhkost: 56%</p>
 
         <div class="card-body">
@@ -57,14 +57,14 @@
     </div>
 
     <div class="col">
-      <div class="card text-center border-0"style="width: 13rem;">
-        <img src="static/images/cloud_day_lightbolt_rain_sun.png" class="card-img-top" alt="...">
+      <div class="card text-center border-0"style="width: 18rem;">
+        <img src="static/images/icons/cloudrainlite.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Wed</h5>
-          <h4 class="card-text fw-bold">17 C</h4>
+          <h5 class="card-title">{{mylist[2][1]}}</h5>
+          <h4 class="card-text fw-bold">{{mylist[2][8]}} C</h4>
         </div>
 
-          <p class="card-text">Vítr: JZ 12 km/h</p>
+          <p class="card-text">Vítr: {{mylist[2][2]}} km/h</p>
           <p class="card-text">Vlhkost: 56%</p>
 
         <div class="card-body">
@@ -76,14 +76,14 @@
     </div>
 
     <div class="col">
-      <div class="card text-center border-0"style="width: 13rem;">
-        <img src="static/images/cloud_day_lightbolt_rain_sun.png" class="card-img-top" alt="...">
+      <div class="card text-center border-0"style="width: 18rem;">
+        <img src="static/images/icons/cloud.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Thu</h5>
-          <h4 class="card-text fw-bold">15 C</h4>
+          <h5 class="card-title">{{mylist[3][1]}}</h5>
+          <h4 class="card-text fw-bold">{{mylist[3][8]}} C</h4>
         </div>
 
-          <p class="card-text">Vítr: JZ 12 km/h</p>
+          <p class="card-text">Vítr: {{mylist[3][2]}} km/h</p>
           <p class="card-text">Vlhkost: 56%</p>
 
         <div class="card-body">
@@ -95,14 +95,14 @@
     </div>
 
     <div class="col">
-      <div class="card text-center border-0"style="width: 13rem;">
-        <img src="static/images/cloud_day_lightbolt_rain_sun.png" class="card-img-top" alt="...">
+      <div class="card text-center border-0"style="width: 18rem;">
+        <img src="static/images/icons/suncloud.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Fri</h5>
-          <h4 class="card-text fw-bold">19 C</h4>
+          <h5 class="card-title">{{mylist[4][1]}}</h5>
+          <h4 class="card-text fw-bold">{{mylist[4][8]}} C</h4>
         </div>
 
-          <p class="card-text">Vítr: JZ 12 km/h</p>
+          <p class="card-text">Vítr: {{mylist[4][2]}} km/h</p>
           <p class="card-text">Vlhkost: 56%</p>
 
         <div class="card-body">
@@ -113,43 +113,8 @@
       </div>
     </div>
 
-    <div class="col">
-      <div class="card text-center border-0"style="width: 13rem;">
-        <img src="static/images/cloud_day_lightbolt_rain_sun.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Sat</h5>
-          <h4 class="card-text fw-bold">22 C</h4>
-        </div>
 
-          <p class="card-text">Vítr: JZ 12 km/h</p>
-          <p class="card-text">Vlhkost: 56%</p>
 
-        <div class="card-body">
-          <div class="d-grid col-10 mx-auto">
-            <a href="#" class="button-link btn btn-light">Detail</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="card text-center border-0"style="width: 13rem;">
-        <img src="static/images/cloud_day_lightbolt_rain_sun.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Sun</h5>
-          <h4 class="card-text fw-bold">19 C</h4>
-        </div>
-
-          <p class="card-text">Vítr: JZ 12 km/h</p>
-          <p class="card-text">Vlhkost: 56%</p>
-
-        <div class="card-body">
-          <div class="d-grid col-10 mx-auto">
-            <a href="#" class="button-link btn btn-light">Detail</a>
-          </div>
-        </div>
-      </div>
-    </div>
 
   </div>
 </div>
