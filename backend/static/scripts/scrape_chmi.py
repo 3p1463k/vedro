@@ -9,28 +9,30 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 
 
-# Open web
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-options = Options()
-options.headless = True
+def chmiscrape():
 
-driver.get(
-    "https://www.chmi.cz/predpovedi/predpovedi-pocasi/ceska-republika/tydenni-predpoved"
-)
+    # Open web
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+    options = Options()
+    options.headless = True
 
-sleep(1)
+    driver.get(
+        "https://www.chmi.cz/predpovedi/predpovedi-pocasi/ceska-republika/tydenni-predpoved"
+    )
 
-##Parse html
-html = driver.page_source
-soup = BeautifulSoup(html, "html.parser")
+    sleep(1)
 
-with open(
-    "/home/evzen/doc/script/python/fastapi/vedro/backend/static/files/chmi.html",
-    "w",
-    encoding="utf-8",
-) as file:
-    file.write(str(soup))
+    ##Parse html
+    html = driver.page_source
+    soup = BeautifulSoup(html, "html.parser")
 
-sleep(1)
+    with open(
+        "/home/evzen/doc/script/python/fastapi/vedro/backend/static/files/chmi.html",
+        "w",
+        encoding="utf-8",
+    ) as file:
+        file.write(str(soup))
 
-driver.quit()
+    sleep(1)
+
+    driver.quit()
