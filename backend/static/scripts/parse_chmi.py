@@ -1,6 +1,8 @@
 def extract_chmihtml():
     from bs4 import BeautifulSoup
 
+    print("Extracting html")
+
     with open(
         "/home/evzen/doc/script/python/fastapi/vedro/backend/static/files/chmi.html",
         "rb",
@@ -20,6 +22,8 @@ def extract_chmihtml():
 def extrac_chmi_strings():
     import pandas as pd
     import numpy as np
+
+    print("Extracting chmi strings")
 
     firs = np.array([])
     sec = np.array([])
@@ -76,6 +80,9 @@ def make_df():
         newcontent, columns=["Day", "First", "Sec", "Low", "High", "Wind"]
     )
 
-    df.to_csv("static/files/chmidf.csv", index=False)
+    df.to_csv(
+        "/home/evzen/doc/script/python/fastapi/vedro/backend/static/files/chmidf.csv",
+        index=False,
+    )
 
     return df

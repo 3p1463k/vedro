@@ -12,10 +12,14 @@ from selenium.webdriver.chrome.options import Options
 def chmiscrape():
 
     # Open web
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+    print("Starting up ...")
     options = Options()
     options.headless = True
+    driver = webdriver.Chrome(
+        service=Service(ChromeDriverManager().install()), options=options
+    )
 
+    print("Scraping content ...")
     driver.get(
         "https://www.chmi.cz/predpovedi/predpovedi-pocasi/ceska-republika/tydenni-predpoved"
     )
@@ -23,6 +27,7 @@ def chmiscrape():
     sleep(1)
 
     ##Parse html
+    print("Saving data ...")
     html = driver.page_source
     soup = BeautifulSoup(html, "html.parser")
 
@@ -33,6 +38,7 @@ def chmiscrape():
     ) as file:
         file.write(str(soup))
 
+    print("Quiting ...")
     sleep(1)
 
     driver.quit()

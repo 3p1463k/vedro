@@ -30,3 +30,6 @@ beautifulsoup4
 lxml
 html5lib
 nltk
+
+#for job scheduling
+schedule
