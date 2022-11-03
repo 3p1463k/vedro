@@ -50,7 +50,7 @@ def make_list():
     df1["lolo"] = list(zip(*df.Templow))[1]
     df1["hilo"] = list(zip(*df.Temphigh))[0]
     df1["hihi"] = list(zip(*df.Temphigh))[1]
-    df1["avglo"] = (df1.lolo + df1.hilo) / 2
+    df1["avglo"] = (df1.lolo + df1.lohi) / 2
     df1["avghi"] = (df1.hilo + df1.hihi) / 2
 
     mylist = [row for row in df1.itertuples()]

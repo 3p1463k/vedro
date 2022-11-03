@@ -1,0 +1,104 @@
+{% extends "shared/base.html" %}
+
+{% block title %}
+  <title>BRRR</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row mt-2">
+    <div class="col-sm-12 mt-4">
+      <img src="static/images/icons/suncloudrainlite.png" style="max-width:100%;" class="mx-auto d-block alt="...">
+    </div>
+    <div class="col-sm-12 pt-4">
+      <p class ="display-5 pb-2 text-center">
+        Aktuální počasí v České republice
+      </p>
+      <p class="display-1 mt-2 text-center fw-bold">20 °C</p>
+      <p class="h4 text-center">Vítr: 5 km/h</p>
+      <p class="h5 mt-4 text-center">Vlhkost: 56%</p>
+      <p class="h5 mt-4  text-center">Polojasno.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row mt-2">
+    <div class="col-sm-12 ">
+      <p class ="display-6 3 text-center mt-4 pb-4">
+      Předpověď pro Českou republiku
+      </p>
+      <div class="row mt-4">
+        <div class="col">
+          <div class="card text-center  border-0"style="width: auto;">
+            <img src="static/images/icons/suncloudrainlite.png" class="card-img-top" alt="...">
+            <div class="card-body mt-1">
+              <h5 class="card-title">{{mylist[0][1]}}</h5>
+              <h4 class="card-text fw-bold">{{mylist[0][8]}} C</h4>
+              <p class="card-text">Vítr: {{mylist[0][2]}} km/h</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center  border-0"style="width: auto;">
+            <img src="static/images/icons/sun.png" class="card-img-top" alt="...">
+            <div class="card-body mt-1">
+              <h5 class="card-title">{{mylist[1][1]}}</h5>
+              <h4 class="card-text fw-bold">{{mylist[1][8]}} C</h4>
+              <p class="card-text">Vítr: {{mylist[1][2]}} km/h</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center  border-0"style="width: auto;">
+            <img src="static/images/icons/cloudrainlite.png" class="card-img-top" alt="...">
+            <div class="card-body mt-1">
+              <h5 class="card-title">{{mylist[2][1]}}</h5>
+              <h4 class="card-text fw-bold">{{mylist[2][8]}} C</h4>
+              <p class="card-text">Vítr: {{mylist[2][2]}} km/h</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center  border-0"style="width: auto;">
+            <img src="static/images/icons/cloud.png" class="card-img-top" alt="...">
+            <div class="card-body mt-1">
+              <h5 class="card-title">{{mylist[3][1]}}</h5>
+              <h4 class="card-text fw-bold">{{mylist[3][8]}} C</h4>
+              <p class="card-text">Vítr: {{mylist[3][2]}} km/h</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center  border-0"style="width: auto;">
+            <img src="static/images/icons/suncloud.png" class="card-img-top" alt="...">
+            <div class="card-body mt-1">
+              <h5 class="card-title">{{mylist[4][1]}}</h5>
+              <h4 class="card-text fw-bold">{{mylist[4][8]}} C</h4>
+              <p class="card-text">Vítr: {{mylist[4][2]}} km/h</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pb-4 mt-4 justify-content-center">
+        <div class="col-sm-12">
+          <div class="card mt-2 text-center">
+            <div class="card-header">
+                Reklama
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>Velmi vydelecna reklama</p>
+                <footer class="footer">Big promotion Big Sales BIG!!</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

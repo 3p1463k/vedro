@@ -14,4 +14,4 @@ async def home(request: Request):
     mylist = make_list()
     context = {"request": request, "mylist": mylist}
 
-    return templates.TemplateResponse("/general_pages/carousel.html", context)
+    return templates.TemplateResponse("/general_pages/home.html", context)

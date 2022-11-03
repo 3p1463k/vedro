@@ -2,7 +2,7 @@ import os
 import schedule
 from time import sleep
 
-# from scrape_chmi import chmiscrape
+from scrape_chmi import chmiscrape
 from parse_chmi import make_df
 
 print("Startin jobator ... ")
@@ -27,7 +27,7 @@ def job2():
 # schedule.every(10).seconds.do(job3)
 # schedule.every(1).minute.do(job1)
 # schedule.every(5).seconds.do(job10)
-
+# job1()
 # schedule.every(220).minutes.do(job1)
 schedule.every(2).minutes.do(job2)
 
